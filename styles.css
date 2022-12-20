@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Gawd damn, God mod be like with this thingie */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+:root {
+  --dark-gray: rgb(38, 42, 49);
+  --pure-white: white;
+  --pure-black: black;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  height: ;
+  background-color: var(--dark-gray);
+  color: var(--pure-white);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-container {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container-sketch {
+  display: grid;
+  width: 600px;
+  min-width: 300px;
+  max-width: 90%;
+  aspect-ratio: 1;
+  background-color: var(--pure-white);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.859);
+}
+
+/* ASIDE */
+
+aside {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  gap: 40px;
+}
+
+input[type='color'],button {
+  transition: all 0.2s ease-out;
+}
+
+input[type='color']:hover,button:hover {
+  transform: scale(105%);
+}
+
+input[type='color'] {
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.229);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.859);
+}
+
+#rangeSlider {
+  width: 100%;
+  background-color: transparent;
+}
+
+.aside__p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-item {
+  user-select: none;
+}
+
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+  
+  aside {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Inspired mostly in:
+    https://github.com/michalosman/etch-a-sketch/blob/08026326aa9c780c507a11d0e6c97fc3faaa2404/script.js#L49 -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js" defer></script>
+  <title>Etch-A-Sketch</title>
+</head>
+<body draggable="false">
+  <main id="main-container">
+    <h1>Etch-a-Sketch</h1>
+    <div id="container-sketch">
+  </main>
+  <aside>
+    <input type="color" id="colorPicker-input">
+    <button class="btn colorButton">Color Picker</button>
+    <button class="btn rainbowButton">Rainbow</button>
+    <button class="btn eraserButton">Eraser</button>
+    <button class="btn clearButton">Clear</button>
+    <div>
+      <p class="aside__p"></p>
+      <input type="range" min="2" max="64" id="rangeSlider">
+    </div>
+  </aside>
+  </div>
+</body>
+</html>
