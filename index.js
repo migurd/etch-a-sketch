@@ -74,7 +74,7 @@ const updateColor = (e) => {
     e.target.style.backgroundColor = `rgb(${colorR}, ${colorG}, ${colorB})`;
   else if(currentMode === 'eraser')
     e.target.style.backgroundColor = 'var(--pure-white)';
-    
+  
 }
 
 const updateButton = (newMode) => {
