@@ -13,6 +13,10 @@
   --pure-black: black;
 }
 
+a {
+  color: rgb(0, 195, 255);
+}
+
 h1 {
   font-size: 3rem;
   line-height: 6rem;
@@ -108,6 +112,11 @@ input[type='color']::-webkit-color-swatch-wrapper {
 
 .grid-item {
   user-select: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 50px;
 }
 
 @media (max-width: 1024px) {
